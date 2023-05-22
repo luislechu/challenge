@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width" content="IE=edge">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="html/reset.css/reset.css">
+        <link rel="stylesheet" href="style_encriptador.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+       
+    </head>
+
+    <body>
+        <header>
+            <div class="encabezado">
+                <img src="alura.png" alt="logo alura encriptador" width="90px" height="48px">               
+            </div>
+        </header>
+
+        <main>
+            <section class="ingresartexto">
+               <textarea class="text-area" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                
+                <div>
+                    <h6 class="informacion">Solo letras minúsculas y sin acentos.</h6>
+                </div>
+                <div class="botones">
+                    <button class="boton-encriptar" onclick="botonEncriptar()">Encriptar</button>
+                    <button class="boton-desencriptar" onclick="botonDesencriptar()">Desencriptar</button>
+                </div>
+            </section>
+
+            <section>
+                <textarea class="mensaje" cols="20" rows="13"></textarea>
+                <img src="lechuga_animada.png" class="fondo-mensaje" width="200px" height=" 200px">
+                <div>
+                    <button class="boton-copiar" onclick="copiarEnPortapapeles()">Copiar</button>
+                    
+                </div>
+                <span class="mensaje-copiado"></span>
+            </section>
+        </main>
+    <script src="script.js"></script>
+    </body>
+
+</html>
